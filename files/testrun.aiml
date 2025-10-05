@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>*</pattern>
+	    <template>
+	        <reply>
+	            <text>Need help picking a job in CS?</text>
+	            <postback>yes1</postback>
+	        </reply>     
+	        <reply>
+	            <text>no</text>
+	            <postback>no1</postback>
+            </reply>
+	    </template>
+    </category>
+    <category>
+        <pattern>yes1</pattern>
+        <template>
+            <reply>
+                <text>I like math</text>
+                <postback>math</postback>
+            </reply>
+            <reply>
+                <text>I like hardware</text>
+                <postback>hardware</postback>
+            </reply>
+            <reply>
+                <text>I like leading</text>
+                <postback>lead</postback>
+            </reply>
+        </template>
+    </category>
+    <category>
+        <pattern>no1</pattern>
+        <template>Okay have a good day!</template>
+    </category>
+    <category>
+        <pattern>math</pattern>
+        <template>
+            <reply>
+                <text>I like finding patterns to solve problems</text>
+                <postback>pat</postback>
+            </reply>
+            <reply>
+                <text>I like using formulas to solve problems</text>
+                <postback>formula</postback>
+            </reply>
+        </template>
+    </category>
+    <category>
+        <pattern>hardware</pattern>
+        <template>
+            <reply>
+                <text>I like fixing problems</text>
+                <postback>help</postback>
+            </reply>
+            <reply>
+                <text>I like protecting people</text>
+                <postback>protect</postback>
+            </reply>
+        </template>
+    </category>
+    <category>
+        <pattern>pat</pattern>
+        <template>A career being a data analyst is for you!</template>
+    </category>
+    <category>
+        <pattern>formula</pattern>
+        <template>A career being a Software Developer is for you!</template>
+    </category>
+    <category>
+        <pattern>help</pattern>
+        <template>A career being a IT Specialist is for you!</template>
+    </category>
+    <category>
+        <pattern>protect</pattern>
+        <template>A career being a Cybersecurity Analyst is for you!</template>
+    </category>
+    <category>
+        <pattern>lead</pattern>
+        <template>A career in Project Management is for you!</template>
+    </category>
+</aiml>
+
